@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск авиабилетов со скидкой</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Поиск авиабилетов</h1>
+        <form id="searchForm">
+            <label>Откуда: <input type="text" id="origin" required placeholder="MOW"></label>
+            <label>Куда: <input type="text" id="destination" required placeholder="LED"></label>
+            <label>Дата: <input type="date" id="date" required></label>
+            <label>Пассажиров: <input type="number" id="passengers" min="1" max="9" value="1" required></label>
+            <button type="submit">Найти билеты</button>
+        </form>
+        <div id="results"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
